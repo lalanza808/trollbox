@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "chat"
+version = "0.1.0"
+description = ""
+authors = ["lza_menace <lza_menace@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "chat", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+quart = "^0.18.3"
+peewee = "^3.15.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "chat:run"
